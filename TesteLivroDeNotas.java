@@ -11,8 +11,28 @@ public class TesteLivroDeNotas {
 
         //um objeto sendo construído
         livroDeNotas = new LivroDeNotas();
+        livroDeNotas.nomeDaDisciplina = nomeDaDisciplina;
 
-        livroDeNotas.exibirMensagem(nomeDaDisciplina);
+        livroDeNotas.exibirMensagem();
+
+
+        LivroDeNotas livro2 = new LivroDeNotas();
+        //syntax sugar
+        livro2.nomeDaDisciplina = "Modelagem";
+
+
+        nomeDaDisciplina = showInputDialog("Outra disciplina");
+
+        livroDeNotas = new LivroDeNotas();
+        
+        //você não quer fazer isso
+        System.gc();
+
+        
+
+        // while(true){
+        //     new LivroDeNotas();
+        // }
 
 
 

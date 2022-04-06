@@ -11,14 +11,19 @@ public class TesteLivroDeNotas {
 
         //um objeto sendo construído
         livroDeNotas = new LivroDeNotas();
-        livroDeNotas.nomeDaDisciplina = nomeDaDisciplina;
+        //livroDeNotas.nomeDaDisciplina = nomeDaDisciplina;
+        livroDeNotas.setNomeDisciplina(nomeDaDisciplina);
+
+        //System.out.println(livroDeNotas.nomeDisciplina);
+        System.out.println(livroDeNotas.getNomeDisciplina());
 
         livroDeNotas.exibirMensagem();
 
 
         LivroDeNotas livro2 = new LivroDeNotas();
         //syntax sugar
-        livro2.nomeDaDisciplina = "Modelagem";
+        //livro2.nomeDaDisciplina = "Modelagem";
+        livro2.setNomeDisciplina("Modelagem");
 
 
         nomeDaDisciplina = showInputDialog("Outra disciplina");

@@ -1,4 +1,5 @@
 //alta coesão
+
 public class LivroDeNotas{
     //variável de instância
     //instância é sinônimo de objeto
@@ -9,7 +10,8 @@ public class LivroDeNotas{
     //setter
     public void setNomeDisciplina(String nomeDisciplina){
         //operador de auto referência: this
-        this.nomeDisciplina = nomeDisciplina;
+        if (nomeDisciplina.length() >= 10)
+            this.nomeDisciplina = nomeDisciplina;
     }
 
     //método de acesso
